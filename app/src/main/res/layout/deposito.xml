@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center_horizontal"
+	android:layout_marginBottom="20dp">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:gravity="center_horizontal"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="match_parent"
+			android:text="Medium Text"
+			android:id="@+id/depositoTitle"
+			android:padding="10dp"
+			android:textStyle="bold"
+			android:gravity="center_horizontal"/>
+
+	</LinearLayout>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Button"
+		android:id="@+id/depositoBtnFurgoneOld"
+		android:gravity="center_vertical|center_horizontal"
+		android:background="@color/colorAccent"
+		android:layout_marginTop="20dp"
+		android:textColor="#FFFFFF"
+		android:padding="10dp"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="Button"
+		android:id="@+id/depositoBtnVisualizzaElenco"
+		android:background="@color/colorAccent"
+		android:layout_marginTop="20dp"
+		android:textColor="#FFFFFF"
+		android:gravity="center_vertical|center_horizontal"
+		android:padding="10dp"
+		android:layout_marginBottom="10dp"/>
+
+</LinearLayout>
+

@@ -1,0 +1,130 @@
+<resources>
+
+    <string name="app_name">ELELCO Mobile Sales</string>
+	<string name="clienti">Clienti</string>
+	<string name="fatture">Fatture</string>
+	<string name="esistenze">Esistenze</string>
+	<string name="stampa">Stampa</string>
+	<string name="aggiornadb">Aggiorna Dati</string>
+	<string name="impostazioni">Impostazioni</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="action_refresh">Aggiorna DB</string>
+	<string name="preference_file_key">com.elelco.erzeni.settings</string>
+	<string name="prod">Prod.</string>
+	<string name="lotto">Lotto</string>
+	<string name="qta">Q.tà</string>
+	<string name="prezzo">Prezzo</string>
+	<string name="importo">Importo</string>
+	<string name="errore">Error</string>
+	<string name="um">U.M.</string>
+	<string name="mancaPrezzoListino">Prodotto non utilizzabile, manca prezzo listino</string>
+	<string name="totalefattura">Totale Fattura</string>
+	<string name="delete">Elimina</string>
+	<string name="eliminaFattura">Elimina Fattura</string>
+	<string name="confermaEliminaFattura">Eliminare la fattura?</string>
+	<string name="si">SI</string>
+	<string name="no">NO</string>
+	<string name="printError">Errore Stampa</string>
+	<string name="reso">Reso</string>
+	<string name="ritiroInSostituzione">Ritiro in sostituzione</string>
+	<string name="descrizione">Descrizione</string>
+	<string name="dataLottoNonValida">Data lotto non valida</string>
+	<string name="banca">Banca</string>
+	<string name="contanti">Contanti</string>
+	<string name="importoIncassato">Importo incassato</string>
+	<string name="daIncassare">Importo da incassare</string>
+	<string name="pagamentoBanca">Pagamento tramite banca</string>
+	<string name="pagamentoFattura">Pagamento fattura</string>
+	<string name="dataUltimoAggiornamento">Data ultimo download dati</string>
+	<string name="nuovaFattura">NUOVA FATTURA</string>
+	<string name="totfatt">Totale Fattura</string>
+	<string name="deviceSerial">Numero seriale dispositivo</string>
+	<string name="idDispositivo">ID Dispositivo</string>
+	<string name="furgone">Furgone</string>
+	<string name="invioFatture">Invio Fatture</string>
+	<string name="caricoSaldiFurgone">Carico dati furgone</string>
+	<string name="aggiornamentoDati">Aggiornamento dati in corso...</string>
+	<string name="selezionaFurgone">Selezionare il furgone</string>
+	<string name="annullatoDaUtente">Operazione annullata dall\'utente</string>
+	<string name="erroreAggiornamentoDati">AGGIORNAMENTO NON RIUSCITO, SI SONO VERIFICATI DEGLI ERRORI</string>
+	<string name="aggiornamentoRiuscito">Aggiornamento dati effettuato con successo</string>
+	<string name="fine">Fine</string>
+	<string name="r">R</string>
+	<string name="s">S</string>
+	<string name="msgFatturaAperta">Esiste una fattura aperta, impossibile aggiornare i dati, chiudere prima la fattura</string>
+	<!--<string name="erroreAggiornamentoDati">Errore aggiornamento dati:</string>-->
+	<string name="mancaConnessione">Manca connessione</string>
+	<string name="erroreRichiamoWs">Errore richiamo web service:</string>
+	<string name="erroreLetturaDati">Errore lettura dati</string>
+	
+	<string name="erroreTaskInterrotto">Errore task interrotto</string>
+	<string name="erroreTask">Errore esecuzione task</string>
+	<string name="tabletID">Tablet ID</string>
+	<string name="erroreTabletID">Errore lettura risposta web service di assegnazione ID</string>
+	<string name="datiMancanti">Dati mancanti</string>
+	<string name="aggiornamentoDatiOK">Dati aggiornati con successo</string>
+	<string name="erroreScritturaTabella">Errore scrittura tabella</string>
+	<string name="aggiornamentoTabella">Aggiornamento tabella</string>
+	<string name="letturaDatiServer">Lettura dati dal server</string>
+	<string name="invioFattura">Invio fattura</string>
+	<string name="pagamentoCassa">Pagamento in contanti</string>
+	<string name="visualizzaElencoFurgoni">Visualizza Elenco Completo</string>
+	<string name="importoReso">Importo reso</string>
+	<string name="erroreVersione">È necessario aggiornare l\'applicazione</string>
+	<string name="connessioneStampante">ATTENDERE, connessione alla stampante in corso</string>
+	<string name="annulla">Annulla</string>
+	<string name="before_enable_tips">Verrai indirizzato alle impostazioni di stampa di Android.</string>
+    <string name="before_enable_tips_title">Abilitare il Plugin di stampa Samsung print service plugin</string>
+	<string name="ok">Ok</string>
+	<string name="nostampante">Stampante non trovata</string>
+	<string name="riprova">Riprova</string>
+	<string name="chiudiFattura">Chiudi fattura senza stampare</string>
+	<string name="rilevaStampante">Connetti automaticamente alla stampante</string>
+	<string name="omaggio">Omaggio</string>
+	<string name="prodottoOmaggio">Prodotto Omaggio</string>
+	<string name="preventivo">Preventivo</string>
+	<string name="preventivi">Preventivi</string>
+	<string name="invioPreventivo">Invio preventivo</string>
+		<string name="note">Note</string>
+	<string name="salva">Salva Nota</string>
+	<string name="invioNote">Invio Note</string>
+	<string name="cambiaGiro">Cambia giro</string>
+	<string name="importoDocumento">Importo documento</string>
+	<string name="saldoPrecedente">Saldo precedente</string>
+	<string name="tuttiClienti">Elenco Completo Clienti</string>
+	<string name="notaImportoIncassato">*Importo incassato solo se diverso dal totale documento</string>
+	<string name="conferma">Conferma</string>
+	<string name="inserireImportoIncassato">Inserire importo incassato</string>
+	<string name="confermareImportoIncassato">Confermare importo incassato</string>
+	<string name="connettiStampante">Connetti stampante</string>
+	<string name="chiudi">Chiudi</string>
+	<string name="connesso">Connesso a </string>
+	<string name="inconnessione">Connessione in corso</string>
+	<string name="nonconnesso">Non connesso</string>
+	<string name="nostampanteassociata">Nessuna stampante associata</string>
+	<string name="importoNonAmmesso">Supera importo massimo consentito</string>
+	<string-array name="librerie">
+
+        <item>Reale</item>
+        <item>Test</item>
+
+    </string-array>
+	<string name="lingua">Lingua</string>
+	<string-array name="Language">
+        <item>it</item>
+        <item>en</item>
+    </string-array>
+	<string-array name="languageAlias">
+        <item>Italiano</item>
+        <item>Albanese</item>
+    </string-array>
+	<string name="dataTabletErrata">Data dispositivo non valida</string>
+	<string name="udc">Udc</string>
+	<string name="verificaCarico">Verifica Carico</string>
+	<string name="confermaCarico">Conferma Carico</string>
+
+	<string name="prodottoNonDisponibile">Prodotto Non Disponibile</string>
+	<string name="soloReso">Il prodotto selezionato non è disponibile, è possibile solo effettuare un reso, continuare?</string>
+	<string name="ditta">Ditta</string>
+	<string name="stampaBarcode">Stampa Barcode</string>
+</resources>

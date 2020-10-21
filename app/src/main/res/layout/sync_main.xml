@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:paddingTop="10dp">
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="200dp"
+		android:text="@string/invioFatture"
+		android:id="@+id/syncmain_btnInvioFatture"/>
+
+	<Button
+		android:layout_height="wrap_content"
+		android:layout_width="200dp"
+		android:text="@string/caricoSaldiFurgone"
+		android:layout_marginTop="30dp"
+		android:id="@+id/syncmain_btnScaricoSaldi"
+		/>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_width="wrap_content"
+				android:text=""
+				android:id="@+id/syncdbTextViewStatus"
+				android:paddingLeft="10dp"/>
+
+			<ProgressBar
+				android:id="@+id/syncdbProgress"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				style="@android:style/Widget.ProgressBar.Small"
+				android:layout_gravity="center_vertical|end"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_height="fill_parent"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="fill_parent"
+			android:text=""
+			android:maxLines="30"
+			android:scrollbars="vertical"
+			android:id="@+id/syncdbTextViewProgress"
+			android:layout_marginTop="10dp"
+			android:background="#F1EDEA"
+			android:padding="10dp"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

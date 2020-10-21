@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">ELELCO Mobile Sales</string>
+	<string name="clienti">Klientët</string>
+	<string name="fatture">Faturat</string>
+	<string name="esistenze">Gjendja</string>
+	<string name="stampa">Printo</string>
+	<string name="aggiornadb">Përditëso të dhënat</string>
+	<string name="impostazioni">Parametrat</string>
+	<string name="preference_file_key">com.elelco.erzeni.settings</string>
+	<string name="prod">Prod.</string>
+	<string name="lotto">Loto</string>
+	<string name="qta">Sasia</string>
+	<string name="prezzo">Çmimi</string>
+	<string name="importo">Totali</string>
+	<string name="errore">Pasaktësi</string>
+	<string name="action_refresh">Aggiorna DB</string>
+	<string name="um">NJ</string>
+	<string name="mancaPrezzoListino">Prod. nuk mund të përdoret, mungon lista e Çmimeve</string>
+	<string name="totalefattura">Totali i faturës</string>
+	<string name="totfatt">Tot. Fat.</string>
+	<string name="delete">Fshi</string>
+	<string name="eliminaFattura">Fshi faturen</string>
+	<string name="nuovaFattura">FATURË E RE</string>
+	<string name="confermaEliminaFattura">Deshironi te fshini faturen?</string>
+	<string name="si">PO</string>
+	<string name="no">JO</string>
+	<string name="printError">Pasaktësi në printim</string>
+	<string name="reso">Kthim</string>
+	<string name="ritiroInSostituzione">Zëvendësim</string>
+	<string name="descrizione">Përshkrimi</string>
+	<string name="dataLottoNonValida">Të dhënat e lotos nuk jan të vlefshme</string>
+	<string name="banca">Bankë</string>
+	<string name="contanti">Kontaktet</string>
+	<string name="importoIncassato">Vlera e arkëtuar</string>
+	<string name="daIncassare">Vlera për tu arkëtuar</string>
+	<string name="pagamentoBanca">Pagesë me bankë</string>
+	<string name="pagamentoFattura">Pagesa e faturës</string>
+	<string name="dataUltimoAggiornamento">Data e fundit e shkarkimit të të dhënave</string>	
+	<string name="deviceSerial">Numri serial i paisjes</string>
+	<string name="idDispositivo">ID e paisjes</string>
+	<string name="furgone">Fugon</string>
+	<string name="invioFatture">Dërgo faturat</string>
+	<string name="caricoSaldiFurgone">Ngarkesa e të dhënave të fugonit</string>
+	<string name="aggiornamentoDati">Përditësimi i të dhënave në proces…</string>
+	<string name="selezionaFurgone">Zgjidh fugonin</string>
+	<string name="annullatoDaUtente">Veprim i anuluar nga përdoruesi</string>
+	<string name="erroreAggiornamentoDati">PËRDITËSIMI NUK U KRYE, U GJENDËN PASAKTËSI</string>
+	<string name="aggiornamentoRiuscito">Përditësimi  i të dhënave  u krye me sukses</string>
+	<string name="fine">Fund</string>
+	<string name="r">K</string>
+	<string name="s">Z</string>
+	<string name="msgFatturaAperta">Një faturë e hapur, nuk mund të përditësohen të dhënat, mbyllni më parë faturën</string>
+	<!--<string name="erroreAggiornamentoDati">Pasaktësi në përditësimin e të dhënave:</string>
+	-->
+	<string name="mancaConnessione">Mungon lidhja</string>
+	<string name="erroreRichiamoWs">Telefono Asistencën: erroreRichiamoWs</string>
+	<string name="erroreLetturaDati">Pasaktësi në leximin e të dhënave</string>
+	
+	<string name="erroreTaskInterrotto">Telefono Asistencën: erroreTaskInterrotto</string>
+	<string name="erroreTask">Telefono Asistencën: erroreTask</string>
+	<string name="tabletID">ID e Tabletit</string>
+	<string name="erroreTabletID">Telefono Asistencën: erroreTabletID</string>
+	<string name="datiMancanti">MUNGOJNË TË DHËNA</string>
+	<string name="aggiornamentoDatiOK">Të dhenat u përditësuan me sukses</string>
+	<string name="erroreScritturaTabella">Telefono Asistencën: aggiornamentoTabella</string>
+	<string name="aggiornamentoTabella">Aggiornamento tabella</string>
+	<string name="letturaDatiServer">Lettura dati dal server</string>
+	<string name="invioFattura">Invio fattura</string>
+	<string name="pagamentoCassa">Pagesë me kasë e faturës</string>
+	<string name="visualizzaElencoFurgoni">Shfaq listën e plotë</string>
+	<string name="importoReso">Importo reso</string>
+	<string name="erroreVersione">Është e nevoshme të përditësohet aplikacioni</string>
+	<string name="connessioneStampante">JU LUTEM PRISNI, lidhja me printerin në proces</string>
+	<string name="annulla">Anulo</string>
+	<string name="before_enable_tips">Do të drejtohesh tek parametrat e printerit Android</string>
+    <string name="before_enable_tips_title">Aktivizo Plugin e printerit Samsung print service plugin</string>
+	<string name="ok">Ok</string>
+	<string name="nostampante">Printeri nuk u gjend</string>
+	<string name="riprova">Provo përsëri</string>
+	<string name="chiudiFattura">Mbyll faturën pa e printuar</string>
+	<string name="rilevaStampante">Lidh në mënyrë automatike me printerin</string>
+	<string name="omaggio">Promocionale</string>
+	<string name="prodottoOmaggio">Fushata Promocionale - Produkte dhurate</string>
+	<string name="preventivo">Porosi</string>
+	<string name="preventivi">Porosi</string>
+	<string name="invioPreventivo">Invio preventivo</string>
+		<string name="note">Shënim</string>
+	<string name="salva">Ruaj Shënimin</string>
+	<string name="invioNote">Dërgo Shënimet</string>
+	<string name="cambiaGiro">Ndrysho linjën</string>
+	<string name="importoDocumento">Vlera e dokumentit</string>
+	<string name="saldoPrecedente">Saldo e mëparshme</string>
+	<string name="tuttiClienti">Lista e plotë e klientëve</string>
+	<string name="notaImportoIncassato">*Vlera e arkëtuar vetëm nëse është e ndyshme nga totali i dokumentit</string>
+	<string name="conferma">Konfirmo</string>
+	<string name="inserireImportoIncassato">Vendos vlerën e arkëtuar</string>
+	<string name="confermareImportoIncassato">Konfirmo vlerën e arkëtuar</string>
+	<string name="connettiStampante">Lidh printerin</string>
+	<string name="chiudi">Mbyll</string>
+	<string name="connesso">Lidhur me </string>
+	<string name="inconnessione">Lidhja në proces</string>
+	<string name="nonconnesso">Nuk u lidh</string>
+	<string name="nostampanteassociata">Asnjë printer i lidhur</string>
+	<string name="importoNonAmmesso">Supera importo massimo consentito</string>
+<string name="section_format"	>sezione</string>
+	<string-array name="librerie">
+        <item>Reale</item>
+        <item>Test</item>
+    </string-array>
+	
+	<string name="lingua">Lingua</string>
+	<string-array name="Language">
+        <item>it</item>
+        <item>en</item>
+    </string-array>
+	<string-array name="languageAlias">
+        <item>Italiano</item>
+        <item>Albanese</item>
+    </string-array>
+	<string name="dataTabletErrata">Data e paisjes e pavlefshme</string>
+	<string name="udc">Udc</string>
+	<string name="verificaCarico">Kontrollo ngarkesën</string>
+
+	<string name="confermaCarico">Konfirmo Ngarkesën</string>
+	<string name="prodottoNonDisponibile">Produkt i padisponueshëm</string>
+	<string name="soloReso">Produkti që keni zgjedhur nuk është i disponueshëm, mund të kryhen vetëm kthime, dëshironi të vazhdoni?</string>
+	<string name="ditta">Kompania</string>
+	<string name="stampaBarcode">Printo Barcod</string>
+
+</resources>

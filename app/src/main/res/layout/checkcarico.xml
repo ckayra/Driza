@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#3F51B5"
+        android:layout_alignParentTop="true"
+        android:id="@+id/checkcarico_cameraviewBox"
+        android:paddingLeft="0dp">
+        <SurfaceView
+            android:id="@+id/checkcarico_cameraview"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/checkcarico_footer"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:paddingLeft="10dp">
+
+        <Button
+            android:id="@+id/checkcarico_btnConferma"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/confermaCarico" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/checkcarico_listRow"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_above="@id/checkcarico_footer"
+        android:layout_below="@id/checkcarico_cameraviewBox"/>
+</RelativeLayout>

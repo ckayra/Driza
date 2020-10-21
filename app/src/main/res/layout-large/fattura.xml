@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:id="@+id/fattura_header"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:background="#3F51B5"
+		android:layout_alignParentTop="true"
+		android:paddingLeft="10dp">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/fattura_ragioneSociale"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text=""
+				android:textSize="24dip"
+				android:textColor="#FFFFFF"
+				android:paddingLeft="10dp"
+				android:paddingTop="10dp"
+				android:paddingBottom="5dp"/>
+
+			<TextView
+				android:id="@+id/fattura_furgone"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text=""
+				android:textSize="18dip"
+				android:textColor="#FFFFFF"
+				android:paddingLeft="10dp"/>
+
+		</LinearLayout>
+
+		<ImageButton
+			android:id="@+id/fattura_btnDeleteFattura"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:src="@drawable/ic_delete_forever_white_24dp"
+			android:layout_centerInParent="true"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:id="@+id/fattura_immissione"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="vertical"
+		android:layout_below="@id/fattura_header"
+		android:background="#EAEDFF">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal"
+			android:paddingLeft="10dp">
+
+			<LinearLayout
+				android:id="@+id/fattura_divCodiceArticolo"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:gravity="center"
+					android:text="@string/prod"/>
+
+				<AutoCompleteTextView
+					android:id="@+id/fattura_codiceArticolo"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="      "
+					android:gravity="right"
+					android:selectAllOnFocus="true"
+					android:completionThreshold="1"
+					android:textSize="20dip"
+					android:minWidth="65dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/fattura_divLotto"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:gravity="center"
+					android:text="@string/lotto"/>
+
+				<AutoCompleteTextView
+					android:id="@+id/fattura_lotto"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:hint="00/00/00"
+					android:gravity="center"
+					android:inputType="number"
+					android:digits="0123456789/"
+					android:selectAllOnFocus="true"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/fattura_divUm"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:paddingLeft="10dp"
+				android:orientation="vertical"
+				android:paddingRight="10dp">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="@string/um"
+
+					android:gravity="center"/>
+
+				<TextView
+					android:id="@+id/fattura_um"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:layout_width="wrap_content"
+					android:textSize="20dip"
+					android:paddingTop="9dp"
+					/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/fattura_divQuantita"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="match_parent"
+					android:text="@string/qta"
+					android:gravity="center"/>
+
+				<EditText
+					android:id="@+id/fattura_quantita"
+					android:layout_height="wrap_content"
+					android:inputType="numberDecimal"
+					android:gravity="right"
+					android:layout_width="wrap_content"
+					android:minEms="3"
+					android:textSize="20dip"
+					android:imeOptions="actionDone"
+					android:selectAllOnFocus="true"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/fattura_divPrezzo"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:paddingLeft="10dp"
+				android:orientation="vertical"
+				android:gravity="right">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="@string/prezzo"
+					android:gravity="center"/>
+
+				<TextView
+					android:id="@+id/fattura_prezzo"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text=""
+					android:textSize="20dip"
+					android:paddingTop="9dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/fattura_divImporto"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:paddingLeft="10dp"
+				android:orientation="vertical"
+				android:gravity="right">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="@string/importo"
+					android:gravity="center"/>
+
+				<TextView
+					android:id="@+id/fattura_importo"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text=""
+					android:textSize="20dip"
+					android:paddingTop="9dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/fattura_divck"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:paddingLeft="10dp"
+				android:orientation="vertical"
+				android:gravity="left">
+
+				<CheckBox
+					android:id="@+id/fattura_ckReso"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:textSize="20dip"
+					android:text="@string/reso"/>
+				
+				<CheckBox
+					android:id="@+id/fattura_ckOmaggio"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:textSize="20dip"
+					android:text="@string/omaggio"/>
+
+				<!--<CheckBox
+					android:id="@+id/fattura_ckSostituzione"
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="@string/ritiroInSostituzione"/>-->
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal"
+			android:paddingLeft="10dp">
+
+			<TextView
+				android:id="@+id/fattura_descrizioneArticolo"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text=""
+				android:textSize="20dip"
+				android:paddingLeft="10dp"
+				android:layout_marginRight="10dp"
+				android:layout_gravity="center_vertical"/>
+
+			<ImageButton
+				android:id="@+id/fattura_btnAddRow"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:src="@drawable/ic_add_box_white_24dp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:id="@+id/fattura_footer"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:layout_alignParentBottom="true"
+		android:background="#3F51B5"
+		android:textColor="#FFFFFF"
+		android:paddingLeft="10dp">
+
+		<ImageButton
+			android:id="@+id/fattura_btnPrint"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:src="@drawable/printer"
+			android:layout_centerVertical="true"/>
+		<Button
+			android:id="@+id/fattura_btnSave"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="@string/fine"
+			android:layout_centerVertical="true"
+		/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="@string/totfatt"
+			android:textSize="20dip"
+			android:textColor="#FFFFFF"
+			android:padding="10dp"
+			android:layout_toLeftOf="@+id/fattura_totale"/>
+
+		<TextView
+			android:id="@+id/fattura_totale"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text=""
+			android:textSize="20dip"
+			android:textColor="#FFFFFF"
+			android:padding="10dp"
+			android:layout_alignParentRight="true"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:text="Large Text"
+			android:layout_centerInParent="true"
+			android:textColor="#FFFFFF"
+			android:textStyle="bold"
+			android:id="@+id/fatturaum1"
+			android:textSize="30dip"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/fattura_intestazionerighe"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:background="#3F51B5"
+		android:layout_below="@id/fattura_immissione"
+		android:padding="10dp">
+
+		<TextView
+			android:id="@+id/fatturarighe_tcodice"
+			android:layout_height="wrap_content"
+			android:textSize="16dip"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"
+			android:text="@string/prod"
+			android:layout_width="55dp">
+
+		</TextView>
+
+		<TextView
+			android:id="@+id/fatturarighe_tdescrizione"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16dip"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"
+			android:text="@string/descrizione"
+			android:layout_toRightOf="@+id/fatturarighe_tcodice"
+			android:paddingLeft="2dp"/>
+
+		<TextView
+			android:id="@+id/fatturarighe_tlotto"
+			android:layout_width="80dp"
+			android:layout_height="wrap_content"
+			android:padding="5dip"
+			android:textSize="16dip"
+			android:visibility="gone"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"
+			android:text="@string/lotto"
+			android:layout_toLeftOf="@+id/fatturarighe_tum"
+			android:paddingLeft="5dp"
+			android:gravity="center_horizontal"/>
+
+		<TextView
+			android:id="@+id/fatturarighe_tum"
+			android:layout_width="36dp"
+			android:layout_height="wrap_content"
+			android:textSize="16dip"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"
+			android:text="@string/um"
+			android:paddingLeft="1dp"
+			android:layout_toLeftOf="@+id/fatturarighe_tqta"/>
+
+		<TextView
+			android:id="@+id/fatturarighe_tqta"
+			android:layout_width="60dp"
+			android:layout_height="wrap_content"
+			android:textSize="16dip"
+			android:textStyle="bold"
+			android:gravity="right"
+			android:textColor="#FFFFFF"
+			android:text="@string/qta"
+			android:paddingLeft="2dp"
+			android:layout_toLeftOf="@+id/fatturarighe_tflagReso"/>
+
+		<TextView
+			android:id="@+id/fatturarighe_tflagReso"
+			android:layout_width="20dp"
+			android:layout_height="wrap_content"
+			android:textSize="16dip"
+			android:textStyle="bold"
+			android:gravity="right"
+			android:textColor="#FFFFFF"
+			android:layout_toLeftOf="@+id/fatturarighe_tprezzo"
+			android:text=" "
+			android:paddingLeft="2dp"/>
+
+		<TextView
+			android:id="@+id/fatturarighe_tprezzo"
+			android:layout_width="54dp"
+			android:layout_height="wrap_content"
+			android:textSize="16dip"
+			android:textStyle="bold"
+			android:gravity="right"
+			android:textColor="#FFFFFF"
+			android:text="@string/prezzo"
+			android:layout_toLeftOf="@+id/fatturarighe_timporto"
+			android:paddingLeft="2dp"/>
+
+		<TextView
+			android:id="@+id/fatturarighe_timporto"
+			android:layout_width="90dp"
+			android:layout_height="wrap_content"
+			android:textSize="16dip"
+			android:textStyle="bold"
+			android:gravity="right"
+			android:textColor="#FFFFFF"
+			android:text="@string/importo"
+			android:paddingLeft="2dp"
+			android:layout_alignParentRight="true"/>
+
+	</RelativeLayout>
+
+	<ListView
+		android:id="@+id/fattura_listRow"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_above="@id/fattura_footer"
+		android:layout_below="@id/fattura_intestazionerighe"/>
+
+</RelativeLayout>
+

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  
+    <!--<EditTextPreference android:title="Utente"
+        android:key="user"
+        android:summary="Utente"></EditTextPreference>
+    <EditTextPreference android:title="Password"
+        android:key="password"
+        android:summary="Password"
+        android:inputType="textPassword"></EditTextPreference>-->
+	
+		<ListPreference
+			android:key="setting_lingua"
+			android:title="@string/lingua"
+			android:summary="%s"
+			android:dialogTitle="@string/lingua"
+			android:entries="@array/languageAlias"
+			android:entryValues="@array/Language"
+			/>
+		
+		<Preference
+		android:selectable="true" 
+		android:enabled="true"
+		android:key="deviceSN"
+		android:title="@string/deviceSerial"
+		android:summary=""/>
+		
+	
+	<EditTextPreference
+		android:selectable="false" 
+		android:enabled="true"
+		android:key="deviceID"
+		android:title="@string/idDispositivo"
+		android:summary="" />
+
+	<EditTextPreference
+		android:selectable="false"
+		android:enabled="true"
+		android:key="deviceSocieta"
+		android:title="@string/ditta"
+		android:summary="" />
+
+	<EditTextPreference
+		android:selectable="false" 
+		android:enabled="true"
+		android:key="codFurgone"
+		android:title="@string/furgone"
+		android:summary="" />
+	<!--<Preference
+		android:selectable="false" 
+		android:enabled="true"
+		android:key="desFurgone"
+		android:summary=""/>-->
+	<EditTextPreference
+		android:selectable="false" 
+		android:enabled="true"
+		android:key="dataAggiornamentoDati"
+		android:title="@string/dataUltimoAggiornamento"
+		android:summary="" />
+	
+<!--
+	<CheckBoxPreference
+		android:defaultValue="false"
+		android:key="setting_findprinter"
+		android:summary="On/Off"
+		android:title="@string/rilevaStampante" />
+	-->
+        <ListPreference
+            android:key="setting_libreria"
+            android:title="Ambiente"
+            android:summary=""
+            android:entries="@array/librerie"
+            android:entryValues="@array/librerie"
+            android:dialogTitle="Ambiente" />
+
+	<CheckBoxPreference
+		android:key="setting_developermenu"
+		android:summary="On/Off"
+		android:title="Enable developer menu" />
+</PreferenceScreen>

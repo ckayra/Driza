@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<EditText
+		android:id="@+id/esistenze_list_filter"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:layout_marginTop="0dp"/>
+
+
+	<ExpandableListView
+		android:id="@+id/esistenze_list_listview"
+		android:layout_width="wrap_content"
+		android:layout_height="560dp">
+
+	</ExpandableListView>
+
+	<!--
+        <ListView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/esistenze_list_listview"/>
+    -->
+    </LinearLayout>

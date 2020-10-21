@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:id="@+id/note_header"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:background="#3F51B5"
+		android:layout_alignParentTop="true"
+		android:paddingLeft="10dp">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/note_ragioneSociale"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text=""
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textColor="#FFFFFF"
+				android:paddingLeft="10dp"
+				android:paddingTop="10dp"
+				android:paddingBottom="5dp"/>
+
+			<TextView
+				android:id="@+id/note_furgone"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text=""
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="#FFFFFF"
+				android:paddingLeft="10dp"/>
+
+		</LinearLayout>
+
+		<!--<ImageButton
+			android:id="@+id/note_btnNuovaNota"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_alignParentEnd="true"
+			android:src="@drawable/ic_delete_forever_white_24dp"
+			android:layout_centerInParent="true"/>
+-->
+	</RelativeLayout>
+
+	<LinearLayout
+		android:id="@+id/note_immissione"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="vertical"
+		android:layout_below="@id/note_header"
+		android:background="#EAEDFF">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal"
+			android:paddingLeft="10dp">
+
+			<LinearLayout
+				android:id="@+id/note_divNuovaNota"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:orientation="vertical">
+
+			
+
+				<EditText
+					android:inputType="textMultiLine"
+					android:lines="5"
+					android:id="@+id/note_nuovaNota"
+					android:layout_height="wrap_content"
+					android:gravity="top|left"
+					android:layout_width="fill_parent"
+					android:minLines="3"
+					
+					android:selectAllOnFocus="true"/>
+				
+				
+			
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="fill_parent"
+			android:orientation="horizontal"
+			android:paddingLeft="10dp">
+
+			<Button
+				android:id="@+id/note_btnSalvaNote"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="@string/salva"
+				android:layout_centerVertical="true"
+			/>
+
+			
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+
+	<RelativeLayout
+		android:id="@+id/note_intestazionerighe"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:background="#3F51B5"
+		android:layout_below="@id/note_immissione"
+		android:padding="10dp">
+
+		<TextView
+			android:id="@+id/noterighe_tdata"
+			android:layout_height="wrap_content"
+			android:textSize="16dip"
+			android:textStyle="bold"
+			android:textColor="#FFFFFF"
+			android:text="@string/note"
+			android:layout_width="55dp">
+
+		</TextView>
+
+
+
+	</RelativeLayout>
+
+	<ListView
+		android:id="@+id/note_listRow"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_below="@id/note_intestazionerighe"/>
+
+</RelativeLayout>
+
