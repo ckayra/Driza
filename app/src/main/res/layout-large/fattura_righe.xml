@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:id="@+id/fatturarigaback"
+		android:layout_marginTop="10dp">
+
+		<TextView
+			android:id="@+id/fatturarighe_codice"
+			android:layout_height="wrap_content"
+			android:textSize="16dip"
+			android:textStyle="bold"
+			android:layout_width="55dp">
+
+		</TextView>
+
+		<TextView
+			android:id="@+id/fatturarighe_descrizione"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16dip"
+			android:textStyle="bold"
+			android:layout_toRightOf="@+id/fatturarighe_codice"
+			android:paddingLeft="2dp"
+			android:textScaleX="0.9"/>
+
+		<TextView
+			android:id="@+id/fatturarighe_lotto"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16dip"
+			android:textStyle="bold"
+			android:paddingLeft="2dp"
+			android:layout_toLeftOf="@+id/fatturarighe_um"/>
+
+		<TextView
+			android:id="@+id/fatturarighe_um"
+			android:layout_width="30dp"
+			android:layout_height="wrap_content"
+			android:textSize="16dip"
+			android:textStyle="bold"
+			android:paddingLeft="2dp"
+			android:layout_toLeftOf="@+id/fatturarighe_qta"/>
+
+		<TextView
+			android:id="@+id/fatturarighe_qta"
+			android:layout_width="60dp"
+			android:layout_height="wrap_content"
+			android:textSize="16dip"
+			android:textStyle="bold"
+			android:gravity="right"
+			android:paddingLeft="2dp"
+			android:layout_toLeftOf="@+id/fatturarighe_flagReso"/>
+
+		<TextView
+			android:id="@+id/fatturarighe_flagReso"
+			android:layout_width="20dp"
+			android:layout_height="wrap_content"
+			android:textSize="16dip"
+			android:textStyle="bold"
+			android:gravity="right"
+			android:paddingLeft="2dp"
+			android:layout_toLeftOf="@+id/fatturarighe_prezzo"/>
+
+		<TextView
+			android:id="@+id/fatturarighe_prezzo"
+			android:layout_width="54dp"
+			android:layout_height="wrap_content"
+			android:textSize="16dip"
+			android:textStyle="bold"
+			android:gravity="right"
+			android:paddingLeft="2dp"
+			android:layout_toLeftOf="@+id/fatturarighe_importo"/>
+
+		<TextView
+			android:id="@+id/fatturarighe_importo"
+			android:layout_width="90dp"
+			android:layout_height="wrap_content"
+			android:textSize="16dip"
+			android:textStyle="bold"
+			android:gravity="right"
+			android:paddingLeft="2dp"
+			android:layout_alignParentRight="true"/>
+
+	</RelativeLayout>
+
+</LinearLayout>
+

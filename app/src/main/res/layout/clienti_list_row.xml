@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TextView
+		android:id="@+id/clienti_listrow_codice"
+		android:layout_height="wrap_content"
+		android:padding="10dip"
+		android:textSize="16dip"
+		android:textStyle="bold"
+		android:layout_width="80dp">
+
+	</TextView>
+
+
+	<TextView
+		android:id="@+id/clienti_listrow_cassabanca"
+		android:layout_height="wrap_content"
+		android:padding="10dip"
+		android:paddingLeft ="0dip"
+		android:paddingRight ="0dip"
+
+		android:textSize="16dip"
+		android:textStyle="bold"
+		android:layout_width="30dp"
+		android:layout_toRightOf="@+id/clienti_listrow_codice">
+	</TextView>
+
+
+	<TextView
+		android:id="@+id/clienti_listrow_descrizione"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dip"
+		android:textSize="16dip"
+		android:textStyle="bold"
+		android:layout_toRightOf="@+id/clienti_listrow_cassabanca"
+		>
+
+	</TextView>
+
+</RelativeLayout>
+

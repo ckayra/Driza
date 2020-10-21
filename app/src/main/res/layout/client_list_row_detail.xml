@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ECECEC"
+	android:paddingLeft="20dp"
+	android:paddingRight="20dp"
+	android:theme="@style/AppTheme">
+
+	<TextView
+		android:id="@+id/clienti_listdetail_indirizzo1"
+		android:layout_height="wrap_content"
+		android:textSize="12dip"
+		android:textStyle="bold|normal"
+		android:layout_width="fill_parent">
+
+	</TextView>
+
+	<TextView
+		android:id="@+id/clienti_listdetail_indirizzo2"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/clienti_listdetail_indirizzo1"
+		android:textSize="12dip"
+		android:textStyle="bold|normal">
+
+	</TextView>
+
+	<TextView
+		android:id="@+id/clienti_listdetail_localita"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/clienti_listdetail_indirizzo2"
+		android:textSize="12dip"
+		android:textStyle="bold|normal">
+
+	</TextView>
+
+	<Button
+		android:id="@+id/btnOrdine"
+
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/clienti_listdetail_localita"
+		android:layout_alignParentEnd="true"
+
+		android:text="@string/nuovaFattura"
+		android:textSize="10sp" />
+<!--	android:onClick="nuovaFattura"-->
+	<Button
+		android:id="@+id/btnPreventivo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/clienti_listdetail_localita"
+		android:layout_alignParentLeft="true"
+		android:background="#303F9F"
+
+		android:text="@string/preventivo"
+		android:textSize="10sp" />
+	<!--		android:onClick="nuovaFattura"-->
+		<TextView
+		android:id="@+id/notestring"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/btnPreventivo"
+		android:textSize="12dip"
+		android:textStyle="bold|normal"
+		android:layout_marginTop="20dp"
+		android:text="@string/note">
+	</TextView>
+	
+	<EditText
+		android:inputType="textMultiLine"
+		android:lines="5"
+		android:id="@+id/note_nuovaNota"
+		android:layout_height="wrap_content"
+		android:gravity="top|left"
+		android:layout_width="fill_parent"
+		android:minLines="3"
+		android:layout_below="@+id/notestring"
+		android:selectAllOnFocus="true"
+		android:hint="@string/note"
+		style="@style/Widget.AppCompat.EditText"
+		android:background="#FCFDF2"
+		/>
+
+	<Button
+		android:id="@+id/btnNote"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="@string/salva"
+		android:layout_below="@+id/note_nuovaNota"
+
+		android:background="#303F9F"
+		android:layout_marginLeft="10dp"
+		android:layout_alignParentEnd="true"
+		android:paddingTop="5dp"
+		android:textColor="#FFFFFF"
+	/>
+	<!--		android:onClick="gestioneNote"-->
+</RelativeLayout>
+

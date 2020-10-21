@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        applicationId "com.elelco.elelcomobilesalesdriza"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 1
+        versionName "Release 1.00"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+    implementation  fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    //noinspection GradleCompatible
+    implementation  'com.android.support:appcompat-v7:23.1.1'
+    //noinspection GradleCompatible
+    implementation  'com.android.support:design:23.1.1'
+  //   compile 'androidx.appcompat:appcompat'
+	// compile 'com.google.android.material:material:1.+'
+ //  compile 'com.android.support:design:23.1.1'
+    implementation  files('libs/android-async-http-1.4.4.jar')
+    implementation  files('libs/gson-2.7.jar')
+    implementation  'com.tom_roush:pdfbox-android:1.8.9.1'
+    implementation 'com.google.android.gms:play-services-vision:10.0.0'
+	//compile 'com.google.android.gms:play-services-location:17.0.0'
+
+}
+

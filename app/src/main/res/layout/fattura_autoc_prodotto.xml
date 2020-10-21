@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="fill_parent"
+	android:orientation="horizontal"
+	android:paddingTop="10dp"
+	android:paddingLeft="10dp">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="120dp"
+		android:text="Medium Text"
+		android:textSize="18dip"
+		android:id="@+id/fatturaautocprodotto_udc"
+		android:gravity="right"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:text="Medium Text"
+		android:textSize="18dip"
+		android:id="@+id/fatturaautocprodotto_descrizione"
+		android:paddingLeft="10dp"/>
+
+</LinearLayout>
+

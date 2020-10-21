@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:paddingRight="20dp"
+	android:layout_height="match_parent">
+
+	<TextView
+		android:id="@+id/esistenze_listrow_codice"
+		android:layout_height="wrap_content"
+		android:padding="4dip"
+		android:textSize="16dip"
+		android:textStyle="bold"
+		android:layout_width="130dp">
+
+	</TextView>
+
+	<TextView
+		android:id="@+id/esistenze_listrow_descrizione"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="4dip"
+		android:textSize="14dip"
+		android:textStyle="bold"
+		android:layout_toRightOf="@+id/esistenze_listrow_codice"/>
+
+	<TextView
+		android:id="@+id/esistenze_listrow_um"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="4dip"
+		android:textSize="16dip"
+		android:textStyle="bold"
+		android:layout_toLeftOf="@+id/esistenze_listrow_quantita"/>
+
+	<TextView
+		android:id="@+id/esistenze_listrow_quantita"
+		android:layout_width="60dp"
+		android:layout_height="wrap_content"
+		android:padding="4dip"
+		android:textSize="16dip"
+		android:textStyle="bold"
+		android:gravity="right"
+		android:layout_alignParentRight="true">
+
+	</TextView>
+
+</RelativeLayout>
+
