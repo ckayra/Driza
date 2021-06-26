@@ -9,7 +9,7 @@
         <entry key="..\:/Users/int93/Desktop/app android/Driza/app/src/main/res/layout/fattura.xml" value="0.1" />
         <entry key="..\:/Users/int93/Desktop/app android/Driza/app/src/main/res/layout/fattura_autoc_prodotto.xml" value="0.1" />
         <entry key="..\:/Users/int93/Desktop/app android/Driza/app/src/main/res/layout/fattura_righe.xml" value="0.1" />
-        <entry key="..\:/Users/int93/Desktop/app android/Driza/app/src/main/res/layout/fatture_list.xml" value="0.1" />
+        <entry key="..\:/Users/int93/Desktop/app android/Driza/app/src/main/res/layout/fatture_list.xml" value="0.12310030395136778" />
         <entry key="..\:/Users/int93/Desktop/app android/Driza/app/src/main/res/layout/fatture_list_row.xml" value="0.1" />
         <entry key="..\:/Users/int93/Desktop/app android/Driza/app/src/main/res/layout/fatturecliente_list_row.xml" value="0.1" />
         <entry key="..\:/Users/int93/Desktop/app android/Driza/app/src/main/res/layout/layout_progress_bar.xml" value="0.11458333333333333" />
@@ -17,6 +17,7 @@
         <entry key="..\:/Users/int93/Desktop/app android/Driza/app/src/main/res/layout/print_fattura.xml" value="0.1" />
         <entry key="..\:/Users/int93/Desktop/app android/Driza/app/src/main/res/layout/stornoprodotto.xml" value="0.2" />
         <entry key="..\:/Users/int93/Desktop/app android/Driza/app/src/main/res/layout/stornoprodotto_righe.xml" value="0.165625" />
+        <entry key="..\:/Users/int93/Desktop/app android/Driza/app/src/main/res/layout/sync_db.xml" value="0.1" />
         <entry key="..\:/Users/int93/Desktop/app android/Driza/app/src/main/res/menu/menu_fattura_listview.xml" value="0.11458333333333333" />
         <entry key="..\:/Users/int93/Desktop/app android/Driza/app/src/main/res/menu/menu_fatture_listview.xml" value="0.12916666666666668" />
       </map>
